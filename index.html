@@ -3,61 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Future of the Earth</title>
+    <title>Green Future - Saving Our Planet</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* General Reset */
+        body, h1, h2, p, a, ul, li {
             margin: 0;
             padding: 0;
-            background-color: #e8f5e9;
-            text-align: center;
+            box-sizing: border-box;
         }
-        .header {
-            background: url('https://source.unsplash.com/1600x900/?forest,green') no-repeat center;
-            background-size: cover;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #2e7d32;
             color: white;
-            padding: 80px 20px;
-            font-size: 28px;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5rem;
             font-weight: bold;
         }
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
+        nav ul {
+            list-style: none;
+            display: flex;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #2e7d32;
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
             color: white;
             text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #a5d6a7;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?nature,trees') no-repeat center/cover;
+            height: 90vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        .hero .cta-button {
+            padding: 15px 30px;
+            background: #81c784;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
             border-radius: 5px;
-            margin-top: 20px;
-            cursor: pointer;
+            transition: background 0.3s;
         }
-        .button:hover {
-            background: #1b5e20;
+        .hero .cta-button:hover {
+            background: #4caf50;
         }
-        .footer {
+
+        .info-section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+        .info-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .info-section p {
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+        .info-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
             background: #2e7d32;
             color: white;
-            padding: 10px;
-            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="header">Let's Green the Earth for the Future</div>
-    <div class="container">
-        <h2>Why Should We Green the Earth?</h2>
-        <p>Trees and plants play a crucial role in maintaining environmental balance, providing oxygen, and reducing air pollution.</p>
-        <button class="button" onclick="showMessage()">Start Now</button>
-    </div>
-    <div class="footer">&copy; 2025 Green the Earth - All Rights Reserved</div>
-    <script>
-        function showMessage() {
-            alert("Let's start planting trees for a greener future!");
-        }
-    </script>
+    <!-- Header -->
+    <header>
+        <div class="logo">Green Future</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Saving Our Planet for Future Generations</h1>
+        <p>Trees and greenery are the foundation of a sustainable and thriving ecosystem. Together, we can make a difference.</p>
+        <a href="#about" class="cta-button">Learn More</a>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="about">
+        <h2>Why Green Initiatives Matter</h2>
+        <p>Planting trees, reducing emissions, and adopting sustainable practices are essential to protect our planet and ensure a bright future for generations to come.</p>
+        <img src="https://source.unsplash.com/1200x800/?forest,greenery" alt="Lush Green Forest">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Green Future - All Rights Reserved
+    </footer>
 </body>
 </html>
